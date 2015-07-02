@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.redbee.controllers.TaskControllersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-01T22:53:29" hostname="redbee-Satellite-L845-1" time="1.159">
+  <properties/>
+  <testcase name="que devuelva una lista de tareas" classname="com.redbee.controllers.TaskControllersTest" time="1.159"/>
+  <system-out><![CDATA[19:53:29.550 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+19:53:29.567 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+19:53:29.568 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+19:53:29.759 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/task],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.redbee.controllers.TaskController.devolverListado()
+19:53:29.760 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/task],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.redbee.controllers.TaskController.agregarTarea(java.lang.String)
+19:53:30.061 [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+19:53:30.063 [Test worker] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+19:53:30.072 [Test worker] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+19:53:30.081 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+19:53:30.083 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy15
+19:53:30.091 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+19:53:30.100 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+19:53:30.198 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@658673f5
+19:53:30.296 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+19:53:30.312 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+19:53:30.312 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+19:53:30.324 [Test worker] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+19:53:30.328 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @1935ms
+19:53:30.328 [Test worker] DEBUG jndi - InitialContextFactory.getInitialContext()
+19:53:30.335 [Test worker] DEBUG jndi - supportDeepBinding=false
+19:53:30.335 [Test worker] DEBUG jndi - Created initial context delegate for local namespace:org.eclipse.jetty.jndi.local.localContextRoot@2169845d
+19:53:30.336 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+19:53:30.337 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+19:53:30.337 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+19:53:30.337 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+19:53:30.337 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+19:53:30.337 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+19:53:30.341 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+19:53:30.341 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@5a712612]
+19:53:30.341 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@2dcd1973]
+19:53:30.341 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@aadf18d]
+19:53:30.341 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@256924d9]
+19:53:30.342 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+19:53:30.342 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 5 ms
+19:53:30.342 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+19:53:30.402 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/task]
+19:53:30.406 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /task
+19:53:30.410 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.redbee.controllers.TaskController.devolverListado()]
+19:53:30.411 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/task] is: -1
+19:53:30.477 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[]] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7f60d577]
+19:53:30.477 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+19:53:30.477 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
