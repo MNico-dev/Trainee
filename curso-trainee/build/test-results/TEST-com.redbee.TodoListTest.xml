@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.redbee.TodoListTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-07-03T23:17:08" hostname="redbee-Satellite-L845-1" time="0.147">
+  <properties/>
+  <testcase name="que al agregar una tarea a una lista vacia el tamaño sea uno" classname="com.redbee.TodoListTest" time="0.144"/>
+  <testcase name="no hay tareas finalizadas" classname="com.redbee.TodoListTest" time="0.002"/>
+  <testcase name="Hay dos tareas finalizadas" classname="com.redbee.TodoListTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
